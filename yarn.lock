@@ -1947,6 +1947,18 @@
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
 
+"@types/lodash.memoize@^4.1.7":
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@types/lodash.memoize/-/lodash.memoize-4.1.7.tgz#aff94ab32813c557cbc1104e127030e3d60a3b27"
+  integrity sha512-lGN7WeO4vO6sICVpf041Q7BX/9k1Y24Zo3FY0aUezr1QlKznpjzsDk3T3wvH8ofYzoK0QupN9TWcFAFZlyPwQQ==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash@*":
+  version "4.14.192"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.192.tgz#5790406361a2852d332d41635d927f1600811285"
+  integrity sha512-km+Vyn3BYm5ytMO13k9KTp27O75rbQ0NFw+U//g+PX7VZyjCioXaRFisqSIJRECljcTv73G3i6BpglNGHgUQ5A==
+
 "@types/lodash@4.14.168":
   version "4.14.168"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.168.tgz#fe24632e79b7ade3f132891afff86caa5e5ce008"
@@ -1994,12 +2006,6 @@
   resolved "https://registry.yarnpkg.com/@types/qrcode/-/qrcode-1.4.1.tgz#0689f400c3a95d2db040c99c99834faa09ee9dc1"
   dependencies:
     "@types/node" "*"
-
-"@types/react-calendar@^3.0.0":
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/@types/react-calendar/-/react-calendar-3.4.3.tgz#f2475519b44a1495562c526556074df947ce5bc6"
-  dependencies:
-    "@types/react" "*"
 
 "@types/react-dom@*":
   version "17.0.9"
@@ -2195,20 +2201,22 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
-"@wojtekmaj/date-utils@^1.0.2", "@wojtekmaj/date-utils@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@wojtekmaj/date-utils/-/date-utils-1.0.3.tgz#2dcfd92881425c5923e429c2aec86fb3609032a1"
+"@wojtekmaj/date-utils@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/date-utils/-/date-utils-1.1.3.tgz#7be7fb33a2b987d886ff868877ee8c7908176e85"
+  integrity sha512-rHrDuTl1cx5LYo8F4K4HVauVjwzx4LwrKfEk4br4fj4nK8JjJZ8IG6a6pBHkYmPLBQHCOEDwstb0WNXMGsmdOw==
 
-"@wojtekmaj/react-daterange-picker@^3.3.1":
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/@wojtekmaj/react-daterange-picker/-/react-daterange-picker-3.3.1.tgz#50882581480913eca1ec0cc21f2973a121225fe7"
+"@wojtekmaj/react-daterange-picker@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@wojtekmaj/react-daterange-picker/-/react-daterange-picker-5.0.0.tgz#4a3f8076cfbe4e4d72373bbf20eec5e7c51eb798"
+  integrity sha512-dXCHO/keXoHSEKK1qUkJND4gIvXqPqhivjpcQ5hrt1rR/0IB8hoz6NZm3lL/gaqedHZMfecimZ9BPSCBnhYefg==
   dependencies:
-    make-event-props "^1.1.0"
-    merge-class-names "^1.1.1"
+    clsx "^1.2.1"
+    make-event-props "^1.4.2"
     prop-types "^15.6.0"
-    react-calendar "^3.3.1"
-    react-date-picker "^8.3.3"
-    react-fit "^1.0.3"
+    react-calendar "^4.2.0"
+    react-date-picker "^10.0.0"
+    react-fit "^1.5.1"
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.5"
@@ -2611,11 +2619,6 @@ bowser@^2.8.1:
   resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
   integrity sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==
 
-bowser@^2.8.1:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-2.11.0.tgz#5ca3c35757a7aa5771500c70a73a9f91ef420a8f"
-  integrity sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -2992,6 +2995,11 @@ cliui@^7.0.2:
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
 
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -3344,9 +3352,10 @@ des.js@^1.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
 
-detect-element-overflow@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/detect-element-overflow/-/detect-element-overflow-1.2.0.tgz#86e504292ffedc3aef813395fbdf0261aaf6afa9"
+detect-element-overflow@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/detect-element-overflow/-/detect-element-overflow-1.3.1.tgz#1a83f11abfd70c4dec750f214c7d7808c5c19638"
+  integrity sha512-E29Axx3pyotgg3j5HUbusTTarjPUHsC02p7fZ3/cnUufyK0kx5RzRA9waBvrKFWGc/LWiRj3pD9Y3y+mymMYiQ==
 
 detect-newline@^3.0.0:
   version "3.1.0"
@@ -3818,11 +3827,6 @@ fast-equals@^1.6.3:
   resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-1.6.3.tgz#84839a1ce20627c463e1892f2ae316380c81b459"
   integrity sha512-4WKW0AL5+WEqO0zWavAfYGY1qwLsBgE//DN4TTcVEN2UlINgkv9b3vm2iHicoenWKSX9mKWmGOsU/iI5IST7pQ==
 
-fast-equals@^1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/fast-equals/-/fast-equals-1.6.3.tgz#84839a1ce20627c463e1892f2ae316380c81b459"
-  integrity sha512-4WKW0AL5+WEqO0zWavAfYGY1qwLsBgE//DN4TTcVEN2UlINgkv9b3vm2iHicoenWKSX9mKWmGOsU/iI5IST7pQ==
-
 fast-glob@^3.1.1, fast-glob@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.7.tgz#fd6cb7a2d7e9aa7a7846111e85a196d6b2f766a1"
@@ -4107,11 +4111,13 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-get-user-locale@^1.2.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/get-user-locale/-/get-user-locale-1.4.0.tgz#a2c4b5da46feec9f03c9b07d197b1620490a5370"
+get-user-locale@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/get-user-locale/-/get-user-locale-2.2.1.tgz#e7e9f365a202458a360d74c8a3516766d38402ae"
+  integrity sha512-3814zipTZ2MvczOcppEXB3jXu+0HWwj5WmPI6//SeCnUIUaRXu7W4S54eQZTEPadlMZefE+jAlPOn+zY3tD4Qw==
   dependencies:
-    lodash.once "^4.1.1"
+    "@types/lodash.memoize" "^4.1.7"
+    lodash.memoize "^4.1.1"
 
 gifwrap@^0.9.2:
   version "0.9.2"
@@ -4335,18 +4341,6 @@ hex-color-regex@^1.1.0:
 highlight.js@^10.7.1:
   version "10.7.3"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.3.tgz#697272e3991356e40c3cac566a74eef681756531"
-
-history@^4.9.0:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
-  integrity sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
-  dependencies:
-    "@babel/runtime" "^7.1.2"
-    loose-envify "^1.2.0"
-    resolve-pathname "^3.0.0"
-    tiny-invariant "^1.0.2"
-    tiny-warning "^1.0.0"
-    value-equal "^1.0.1"
 
 history@^4.9.0:
   version "4.10.1"
@@ -5700,7 +5694,7 @@ lodash.isstring@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
 
-lodash.memoize@4.x:
+lodash.memoize@4.x, lodash.memoize@^4.1.1:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
@@ -5709,7 +5703,7 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
 
-lodash.once@^4.0.0, lodash.once@^4.1.1:
+lodash.once@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
 
@@ -5768,9 +5762,10 @@ make-error@1.x, make-error@^1.1.1:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/make-error/-/make-error-1.3.6.tgz#2eb2e37ea9b67c4891f684a1394799af484cf7a2"
 
-make-event-props@^1.1.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/make-event-props/-/make-event-props-1.3.0.tgz#2434cb390d58bcf40898d009ef5b1f936de9671b"
+make-event-props@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/make-event-props/-/make-event-props-1.4.2.tgz#b140e8a63b7aaf1bff9ac5a2fa453a6d2dd1ecfe"
+  integrity sha512-ZOHqRpLn2htnMd9zqhE+wticVr31PdwrJXHcvEEdKgrfjCOuSDn8urG9SDzEIqzP1ayp1uTdDJcOiTlJhqWpEQ==
 
 makeerror@1.0.x:
   version "1.0.11"
@@ -5801,14 +5796,6 @@ memorystream@^0.3.1:
   version "0.3.1"
   resolved "https://registry.npmjs.org/memorystream/-/memorystream-0.3.1.tgz#86d7090b30ce455d63fbae12dda51a47ddcaf9b2"
   integrity sha1-htcJCzDORV1j+64S3aUaR93K+bI=
-
-merge-class-names@^1.1.1:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/merge-class-names/-/merge-class-names-1.4.2.tgz#78d6d95ab259e7e647252a7988fd25a27d5a8835"
-
-merge-refs@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/merge-refs/-/merge-refs-1.0.0.tgz#388348bce22e623782c6df9d3c4fc55888276120"
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -6556,13 +6543,6 @@ path-to-regexp@^1.7.0:
   dependencies:
     isarray "0.0.1"
 
-path-to-regexp@^1.7.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-1.8.0.tgz#887b3ba9d84393e87a0a0b9f4cb756198b53548a"
-  integrity sha512-n43JRhlUKUAlibEJhPeir1ncUID16QnEjNpwzNdO3Lm4ywrBpBZ5oLD0I6br9evr1Y9JTqwRtAh7JLoOzAQdVA==
-  dependencies:
-    isarray "0.0.1"
-
 path-type@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
@@ -6974,29 +6954,30 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-calendar@^3.3.1:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-3.4.0.tgz#25396ca0992b3b2042abca334515f6ff4d9878bc"
+react-calendar@^4.2.0:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-4.2.1.tgz#3706bfd5ff727f877c8a60c36bc352b4f8fdee55"
+  integrity sha512-T5oKXD+KLy/g6bmJJkZ7E9wj0iRMesWMZcrC7q2kI6ybOsu9NlPQx8uXJzG4A4C3Sh5Xi0deznyzWIVsUpF8tA==
   dependencies:
-    "@wojtekmaj/date-utils" "^1.0.2"
-    get-user-locale "^1.2.0"
-    merge-class-names "^1.1.1"
+    "@types/react" "*"
+    "@wojtekmaj/date-utils" "^1.1.3"
+    clsx "^1.2.1"
+    get-user-locale "^2.2.1"
     prop-types "^15.6.0"
 
-react-date-picker@^8.3.3:
-  version "8.3.3"
-  resolved "https://registry.yarnpkg.com/react-date-picker/-/react-date-picker-8.3.3.tgz#87e4df8be5a033fb22b6df7cb5d3f6ae31030477"
+react-date-picker@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/react-date-picker/-/react-date-picker-10.0.0.tgz#ab4718506261fa31dd53bd8a76a4807623d8f508"
+  integrity sha512-qefofLOW0d6BfB81AyO1cZCMoCpXlBCjLAeL+xB9O7eGZr21Gzpi+QTjj3PzP0xB0PbE9JonJMLR8IvxvQEViw==
   dependencies:
-    "@types/react-calendar" "^3.0.0"
-    "@wojtekmaj/date-utils" "^1.0.3"
-    get-user-locale "^1.2.0"
-    make-event-props "^1.1.0"
-    merge-class-names "^1.1.1"
-    merge-refs "^1.0.0"
+    "@wojtekmaj/date-utils" "^1.1.3"
+    clsx "^1.2.1"
+    get-user-locale "^2.2.1"
+    make-event-props "^1.4.2"
     prop-types "^15.6.0"
-    react-calendar "^3.3.1"
-    react-fit "^1.0.3"
-    update-input-width "^1.2.2"
+    react-calendar "^4.2.0"
+    react-fit "^1.5.1"
+    update-input-width "^1.3.1"
 
 react-dom@17.0.2:
   version "17.0.2"
@@ -7013,12 +6994,16 @@ react-easy-crop@^3.5.2:
     normalize-wheel "^1.0.1"
     tslib "2.0.1"
 
-react-fit@^1.0.3:
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/react-fit/-/react-fit-1.3.2.tgz#dea734d1dbe4d540037a766c316ae7a4141cf421"
+react-fit@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/react-fit/-/react-fit-1.5.1.tgz#1ed69348258455920e37a6cc647a398163ce0160"
+  integrity sha512-r86m/6GuJa7j6dLYjC7kENBQRBaDMLTU0mBBoqnh42d/Iil9rmWEeOtdB2KEQEUyDQ8rZXojIx8u+gNFJ+9y1w==
   dependencies:
-    detect-element-overflow "^1.2.0"
+    "@types/react" "*"
+    "@types/react-dom" "*"
+    detect-element-overflow "^1.3.1"
     prop-types "^15.6.0"
+    tiny-warning "^1.0.0"
 
 react-hook-form@^7.17.5:
   version "7.17.5"
@@ -7326,11 +7311,6 @@ resolve-from@^4.0.0:
 resolve-from@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
-
-resolve-pathname@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz#99d02224d3cf263689becbb393bc560313025dcd"
-  integrity sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==
 
 resolve-pathname@^3.0.0:
   version "3.0.0"
@@ -8276,9 +8256,10 @@ unpipe@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
 
-update-input-width@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/update-input-width/-/update-input-width-1.2.2.tgz#9a6a35858ae8e66fbfe0304437b23a4934fc7d37"
+update-input-width@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/update-input-width/-/update-input-width-1.3.1.tgz#35d9e56da9e89b57ca84d806a0383b3ff41ca0c0"
+  integrity sha512-hV2DGiSn7FKerjIXaI3s0EG/AnmAeoRTV5cvpsFcygzUzKreYj5qSu7rVihzUOEXF/MP2mjJpUzwi14sZdp0nw==
 
 uri-js@^4.2.2:
   version "4.4.1"
